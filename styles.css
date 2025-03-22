@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f8e8a6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.frog-container {
+    position: relative;
+}
+
+.frog {
+    width: 300px;
+}
+
+.guitar {
+    width: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -30%);
+}
+
+@keyframes moveGuitar {
+    from { transform: translate(-60%, -30%) rotate(-10deg); }
+    to { transform: translate(-60%, -30%) rotate(10deg); }
+}
+
+.guitar-moving {
+    animation: moveGuitar 0.5s infinite alternate;
+}
+
+.lyrics {
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-weight: bold;
+    white-space: pre-line;
+}
+

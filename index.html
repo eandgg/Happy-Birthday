@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños mi amor bello, mi Greisi Greis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🎉 ¡Feliz Cumpleaños, Greisse G! 🎂</h1>
+    <div class="container">
+        <div class="frog-container">
+            <img src="sapo2.png" alt="Sapo" class="frog">
+            <img src="Guitarra1.png" alt="Guitarra" class="guitar">
+        </div>
+    </div>
+    <div class="message">Que tengas un día increíble lleno de alegría y diversión, ya que hoy es un dia muy especial para ti, 18 años cumples, deseo que sigas creciendo y aprendiendo cada tia, te amo mucho </div>
+    
+    <button onclick="toggleGuitar()">🎸 Mover guitarra</button>
+    <button onclick="playMusic()">🎶 Reproducir Canción</button>
+    
+    <input type="file" id="musicFile" accept="audio/mp3" onchange="loadMusic(event)">
+    <audio id="music" src="Cancion.mp3" loop></audio>
+    
+    <div id="lyrics" class="lyrics"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
